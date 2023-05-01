@@ -14,6 +14,7 @@ public class MainWindow extends JFrame {
     public static final String OK_TEXT = "Ok";
     public static final int WIDTH_SIZE = 250;
     public static final int HEIGHT_SIZE = 130;
+    private static final String JOGO_GOURMET_TITLE = "Jogo Gourmet";
 
     public MainWindow(GameManager gameManager) {
         super();
@@ -30,6 +31,7 @@ public class MainWindow extends JFrame {
         this.setSize(new Dimension(WIDTH_SIZE,HEIGHT_SIZE));
         this.setLocationRelativeTo(null);
         this.setResizable(false);
+        this.setTitle(JOGO_GOURMET_TITLE);
     }
 
     private JPanel createPanel(GameManager gameManager) {
